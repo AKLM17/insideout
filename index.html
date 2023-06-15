@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
-   body {
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -23,14 +23,14 @@
     justify-content: space-between;
     align-items: center;
     background-color: #35c6c9;
-    padding: 20px 70px;
+    padding: 20px 100px;
     color: white;
     width: 100%;
 }
 
 .banner img {
-    height: 30px;
-    padding-left: 20px; 
+    height: 50px;
+    padding-left: 20px;
 }
 
 .banner-links a {
@@ -46,38 +46,25 @@
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     margin-top: 20px;
+    width: 80%;
 }
 
-h1 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
-
-.download-button {
-    display: inline-block;
-    background-color: #35c6c9; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 20px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.download-button:hover {
-    background-color: #2aa8a6; 
-}
+.ebook-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);}
     </style>
+
 </head>
 <body>
-    <div class="banner">
-        <img src="insideout-logo.jpg" alt="Company Logo">
+ <div class="banner">
+        <img src="logo.jpg" alt="Company Logo">
         <div class="banner-links">
             <a href="#">Employers</a>
             <a href="#">Practitioners</a>
@@ -91,11 +78,11 @@ p {
         <h1>Wellness at Work</h1>
         <h2>Your 90-Day Blueprint for a Healthier Office</h2>
         <p>Organising a Wellness Month at work can be a transformative experience, promoting overall well-being and fostering a positive workplace culture. Our free eBook - a 90-day calendar of health-related events - is designed to help you plan and implement a successful Wellness Month in your organisation.</p>
-        
-        <img src="cover.jpg" alt="Book Cover" class="book-cover">
 
-        <button class="download-button" onclick="window.location.href='#'">Download eBook</button>
-
+        <div class="ebook-section">
+            <img src="cover-transparent.PNG" alt="Book Cover" class="book-cover">
+            <button class="download-button" onclick="window.location.href='#'">Download eBook</button>
+        </div>
         <h2>What's in the eBook?</h2>
         <p>This comprehensive guide provides a curated list of key health events over a 90-day period. Each event is an opportunity to engage your team in a variety of well-being activities, fostering a healthy, balanced and supportive work environment. Here are a few highlights:</p>
         <ul>
