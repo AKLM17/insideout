@@ -15,7 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 }
 
 .banner {
@@ -52,10 +53,12 @@ body {
     margin: 20px;
     width: 80%;
     gap: 20px;
+    font-size: 1.2em;
 }
 
 .content-section {
     width: 100%;
+    max-width: 600px;
 }
 
 .right-aligned {
@@ -94,15 +97,15 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
     </style>
 
 </head>
 <body>
- <div class="banner">
-        <img src="insideout-logo.jpg" alt="Company Logo">
+    <div class="banner">
+        <img src="logo.jpg" alt="Company Logo">
         <div class="banner-links">
             <a href="#">Employers</a>
             <a href="#">Practitioners</a>
@@ -121,23 +124,27 @@ footer {
 
         <section class="content-section left-aligned">
             <div class="ebook-section">
-                <img src="cover-transparent.png" alt="Book Cover" class="book-cover">
+                <img src="cover-transparent.PNG" alt="Book Cover" class="book-cover">
                 <button class="download-button" onclick="window.location.href='#'">Download eBook</button>
             </div>
         </section>
 
-        <h2>What's in the eBook?</h2>
-        <p>This comprehensive guide provides a curated list of key health events over a 90-day period. Each event is an opportunity to engage your team in a variety of well-being activities, fostering a healthy, balanced and supportive work environment. Here are a few highlights:</p>
-        <ul>
-            <li><strong>National Wellness Month - August:</strong> Promote physical, mental, and emotional health with a variety of initiatives.</li>
-            <li><strong>International Self-Care Day - July 24th:</strong> Highlight the importance of self-care practices.</li>
-            <li><strong>National Relaxation Day - August 15th:</strong> Encourage relaxation and de-stress activities.</li>
-            <!-- Add the rest of your events here. -->
-        </ul>
+        <section class="content-section right-aligned">
+            <h2>What's in the eBook?</h2>
+            <p>This comprehensive guide provides a curated list of key health events over a 90-day period. Each event is an opportunity to engage your team in a variety of well-being activities, fostering a healthy, balanced and supportive work environment. Here are a few highlights:</p>
+            <ul>
+                <li><strong>National Wellness Month - August:</strong> Promote physical, mental, and emotional health with a variety of initiatives.</li>
+                <li><strong>International Self-Care Day - July 24th:</strong> Highlight the importance of self-care practices.</li>
+                <li><strong>National Relaxation Day - August 15th:</strong> Encourage relaxation and de-stress activities.</li>
+                <!-- Add the rest of your events here. -->
+            </ul>
+        </section>
 
-        <h2>The Impact of a Wellness Month</h2>
-        <p>A well-executed Wellness Month can enhance team cohesion, reduce stress levels, improve productivity, and contribute to a positive work culture. Our guide provides practical advice and resources to make organising a Wellness Month simple and rewarding. Learn more and start planning today:</p>
-        <button class="learn-more-button" onclick="window.location.href='#'">Learn More</button>
+        <section class="content-section left-aligned">
+            <h2>The Impact of a Wellness Month</h2>
+            <p>A well-executed Wellness Month can enhance team cohesion, reduce stress levels, improve productivity, and contribute to a positive work culture. Our guide provides practical advice and resources to make organising a Wellness Month simple and rewarding. Learn more and start planning today:</p>
+            <button class="learn-more-button" onclick="window.location.href='#'">Learn More</button>
+        </section>
     </div>
     <footer>
         <p>© 2023 InsideOut. All rights reserved.</p>
