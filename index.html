@@ -40,13 +40,30 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    margin-top: 20px;
+    margin: 20px;
     width: 80%;
+    gap: 20px;
+}
+
+.content-section {
+    width: 100%;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.left-aligned {
+    text-align: left;
 }
 
 .ebook-section {
@@ -55,10 +72,31 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+}
+
+h1, h2 {
+    color: #ff9b21;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #35c6c9;
+    color: white;
+    font-size: 1rem;
     border-radius: 8px;
-    background-color: #f4f4f4;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);}
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: #35c6c9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
     </style>
 
 </head>
@@ -75,14 +113,19 @@ body {
         </div>
     </div>
     <div class="container">
-        <h1>Wellness at Work</h1>
-        <h2>Your 90-Day Blueprint for a Healthier Office</h2>
-        <p>Organising a Wellness Month at work can be a transformative experience, promoting overall well-being and fostering a positive workplace culture. Our free eBook - a 90-day calendar of health-related events - is designed to help you plan and implement a successful Wellness Month in your organisation.</p>
+        <section class="content-section right-aligned">
+            <h1>Wellness at Work</h1>
+            <h2>Your 90-Day Blueprint for a Healthier Office</h2>
+            <p>Organising a Wellness Month at work can be a transformative experience, promoting overall well-being and fostering a positive workplace culture. Our free eBook - a 90-day calendar of health-related events - is designed to help you plan and implement a successful Wellness Month in your organisation.</p>
+        </section>
 
-        <div class="ebook-section">
-            <img src="cover-transparent.PNG" alt="Book Cover" class="book-cover">
-            <button class="download-button" onclick="window.location.href='#'">Download eBook</button>
-        </div>
+        <section class="content-section left-aligned">
+            <div class="ebook-section">
+                <img src="cover-transparent.PNG" alt="Book Cover" class="book-cover">
+                <button class="download-button" onclick="window.location.href='#'">Download eBook</button>
+            </div>
+        </section>
+
         <h2>What's in the eBook?</h2>
         <p>This comprehensive guide provides a curated list of key health events over a 90-day period. Each event is an opportunity to engage your team in a variety of well-being activities, fostering a healthy, balanced and supportive work environment. Here are a few highlights:</p>
         <ul>
@@ -96,5 +139,8 @@ body {
         <p>A well-executed Wellness Month can enhance team cohesion, reduce stress levels, improve productivity, and contribute to a positive work culture. Our guide provides practical advice and resources to make organising a Wellness Month simple and rewarding. Learn more and start planning today:</p>
         <button class="learn-more-button" onclick="window.location.href='#'">Learn More</button>
     </div>
+    <footer>
+        <p>© 2023 InsideOut. All rights reserved.</p>
+    </footer>
 </body>
 </html>
